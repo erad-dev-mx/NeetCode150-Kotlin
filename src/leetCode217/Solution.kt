@@ -4,6 +4,7 @@ package leetCode217
 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
+// This approach uses a HashSet to store the numbers as we iterate through the array.
 
 class Solution {
     fun containsDuplicate(nums: IntArray): Boolean {
