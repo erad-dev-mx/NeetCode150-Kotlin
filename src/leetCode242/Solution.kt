@@ -1,5 +1,12 @@
 package leetCode242
 
+// https://leetcode.com/problems/valid-anagram/
+
+// Time complexity: O(n)
+// Space complexity: O(1)
+// This approach uses a fixed-size array of size 26 (for lowercase English letters) to count the occurrences of each character in both strings.
+
+
 class Solution {
     fun isAnagram(s: String, t: String): Boolean {
         if (s.length != t.length) return false
