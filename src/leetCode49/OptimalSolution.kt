@@ -1,9 +1,10 @@
 package leetCode49
 
-// https://leetcode.com/problems/group-anagrams/
-
-// Time Complexity: O(N * K)
-// Space Complexity: O(N * K)
+/**
+ * https://leetcode.com/problems/group-anagrams/
+ * Time Complexity: O(N * K)
+ * Space Complexity: O(N * K)
+ * */
 
 class OptimalSolution {
     fun groupAnagrams(strs: Array<String>): List<List<String>> {

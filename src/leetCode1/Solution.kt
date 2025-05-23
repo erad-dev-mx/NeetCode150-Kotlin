@@ -1,10 +1,11 @@
 package leetCode1
 
-// https://leetcode.com/problems/two-sum/
-
-// Time Complexity: O(n)
-// Space Complexity: O(n)
-// This approach uses a HashMap to store the indices of the numbers as we iterate through the array.
+/**
+ * https://leetcode.com/problems/two-sum/
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ *This approach uses a HashMap to store the indices of the numbers as we iterate through the array.
+ * */
 
 class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {

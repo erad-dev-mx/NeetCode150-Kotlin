@@ -1,10 +1,11 @@
 package leetCode49
 
-// https://leetcode.com/problems/group-anagrams/
-
-// Time complexity: O(N * K log K)
-// Space complexity: O(N * K)
-// This approach uses a map to group anagrams together.
+/**
+ * https://leetcode.com/problems/group-anagrams/
+ * Time complexity: O(N * K log K)
+ * Space complexity: O(N * K)
+ * This approach uses a map to group anagrams together.
+ * */
 
 class Solution {
     fun groupAnagrams(strs: Array<String>): List<List<String>> {
