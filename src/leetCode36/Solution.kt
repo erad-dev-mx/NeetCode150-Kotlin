@@ -1,5 +1,12 @@
 package leetCode36
 
+/**
+ * https://leetcode.com/problems/valid-sudoku/
+ * Time complexity: O(1)
+ * Space complexity: O(1)
+ * This approach uses hashing to track the numbers seen in each row, column, and 3x3 box.
+ * */
+
 class Solution {
     fun isValidSudoku(board: Array<CharArray>): Boolean {
         val rows = Array(9) { HashSet<Char>() }
