@@ -1,5 +1,12 @@
 package leetCode238
 
+/**
+ * https://leetcode.com/problems/product-of-array-except-self/
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * This approach a two-pass algorithm to calculate the product of all elements except the current one.
+ * */
+
 class Solution {
     fun productExceptSelf(nums: IntArray): IntArray {
         val result = IntArray(nums.size) { 1 }
