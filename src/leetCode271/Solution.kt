@@ -1,5 +1,12 @@
 package leetCode271
 
+/**
+ * https://leetcode.com/problems/encode-and-decode-strings/
+ * Time complexity: O(N)
+ * Space complexity: O(N)
+ * This approach uses a delimiter to encode and decode a list of strings.
+ * */
+
 class Solution {
     // Encodes a list of strings to a single string.
     fun encode(strs: List<String>): String {
