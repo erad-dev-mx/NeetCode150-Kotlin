@@ -26,3 +26,23 @@ class Solution {
         return s.split(separate)
     }
 }
+
+// Your code will be called as such:
+// val solution = Solution()
+// val encoded = solution.encode(listOf("hello", "world"))
+
+// Test cases
+fun main() {
+    val solution = Solution()
+    val encoded = solution.encode(listOf("hello", "world"))
+    println(encoded) // Output: "hello257world"
+
+    val decoded = solution.decode(encoded)
+    println(decoded) // Output: [hello, world]
+
+    val emptyEncoded = solution.encode(emptyList())
+    println(emptyEncoded) // Output: "258"
+
+    val emptyDecoded = solution.decode(emptyEncoded)
+    println(emptyDecoded) // Output: []
+}
