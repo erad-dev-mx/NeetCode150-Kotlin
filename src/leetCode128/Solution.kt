@@ -1,5 +1,12 @@
 package leetCode128
 
+/**
+ * https://leetcode.com/problems/longest-consecutive-sequence/
+ * Time complexity: O(N)
+ * Space complexity: O(N)
+ * This approach uses a HashSet to store the numbers and find the longest consecutive sequence.
+ * */
+
 class Solution {
     fun longestConsecutive(nums: IntArray): Int {
         if (nums.isEmpty()) return 0
