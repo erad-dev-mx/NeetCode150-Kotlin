@@ -22,3 +22,17 @@ class Solution {
         return true
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    val testCases = listOf(
+        "", "a", "A man, a plan, a canal: Panama", "race a car", ".,!@#$", "MadAm", "12321", "12345"
+    )
+
+    for (input in testCases) {
+        val result = solution.isPalindrome(input)
+        println("Input: \"$input\" Result: $result")
+    }
+}
