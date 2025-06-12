@@ -1,5 +1,12 @@
 package leetCode125
 
+/**
+ * https://leetcode.com/problems/valid-palindrome/
+ * Time complexity: O(N)
+ * Space complexity: O(1)
+ * This approach uses two pointers technique.
+ * */
+
 class Solution {
     fun isPalindrome(s: String): Boolean {
         var left = 0
