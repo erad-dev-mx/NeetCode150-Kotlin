@@ -18,3 +18,14 @@ class Solution {
         return null!!
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+    val numbers = intArrayOf(2, 7, 11, 15)
+    val target = 9
+
+    val result = solution.twoSum(numbers, target)
+
+    println("Result: ${result.joinToString(", ")}")
+}
