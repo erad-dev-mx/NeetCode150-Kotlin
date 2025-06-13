@@ -1,5 +1,12 @@
 package leetCode167
 
+/**
+ * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+ * Time complexity: O(N)
+ * Space complexity: O(1)
+ * This approach uses Two-Pointer technique
+ * */
+
 class Solution {
     fun twoSum(numbers: IntArray, target: Int): IntArray {
         var left = 0
