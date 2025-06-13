@@ -1,5 +1,12 @@
 package leetCode15
 
+/**
+ * https://leetcode.com/problems/3sum/
+ * Time complexity: O(N^2) + O(N LogN)
+ * Space complexity: O(N)
+ * This approach uses a Two-Pointer technique
+ * */
+
 class Solution {
     fun threeSum(nums: IntArray): List<List<Int>> {
         nums.sort()
