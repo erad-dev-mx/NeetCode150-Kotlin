@@ -45,3 +45,14 @@ class Solution {
         }
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+    val nums = intArrayOf(-1, 0, 1, 2, -1, -4)
+    val result = solution.threeSum(nums)
+
+    for (triplet in result) {
+        println(triplet)
+    }
+}
