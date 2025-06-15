@@ -4,7 +4,7 @@ package leetCode1
  * https://leetcode.com/problems/two-sum/
  * Time Complexity: O(n)
  * Space Complexity: O(n)
- *This approach uses a HashMap to store the indices of the numbers as we iterate through the array.
+ * This approach uses a HashMap to store the indices of the numbers as we iterate through the array.
  * */
 
 class Solution {
