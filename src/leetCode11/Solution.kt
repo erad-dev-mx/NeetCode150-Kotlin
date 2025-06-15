@@ -28,3 +28,20 @@ class Solution {
         return max
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    val testCases = listOf(
+        intArrayOf(1, 8, 6, 2, 5, 4, 8, 3, 7),
+        intArrayOf(5, 5, 5, 5, 5),
+        intArrayOf(1, 2, 3, 4, 5, 6),
+        intArrayOf(6, 5, 4, 3, 2, 1)
+    )
+
+    for ((index, heights) in testCases.withIndex()) {
+        val result = solution.maxArea(heights)
+        println("Case ${index + 1}: $result")
+    }
+}
