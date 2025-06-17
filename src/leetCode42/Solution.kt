@@ -1,5 +1,12 @@
 package leetCode42
 
+/**
+ * https://leetcode.com/problems/trapping-rain-water/
+ * Time Complexity: O(N)
+ * Space Complexity: O(1)
+ * This approach uses a Two-Pointer technique
+ * */
+
 
 class Solution {
     fun trap(height: IntArray): Int {
