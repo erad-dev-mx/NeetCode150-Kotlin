@@ -34,5 +34,5 @@ fun main() {
     println("Max benefit: ${solution.maxProfit(prices2)}")
 
     val prices3 = intArrayOf(1, 2, 3, 4, 5)
-    println("Max benefit: ${solution.maxProfit(prices1)}")
+    println("Max benefit: ${solution.maxProfit(prices3)}")
 }
