@@ -30,3 +30,22 @@ class Solution {
         return ans
     }
 }
+
+fun main() {
+    val solution = Solution()
+
+    val s1 = ""
+    println("${solution.lengthOfLongestSubstring(s1)}")
+
+    val s2 = "a"
+    println("${solution.lengthOfLongestSubstring(s2)}")
+
+    val s3 = "abcabcbb"
+    println("${solution.lengthOfLongestSubstring(s3)}")
+
+    val s4 = "abcdefgh"
+    println("${solution.lengthOfLongestSubstring(s4)}")
+
+    val s5 = "bmw"
+    println("${solution.lengthOfLongestSubstring(s5)}")
+}
