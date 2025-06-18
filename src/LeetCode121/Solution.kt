@@ -22,3 +22,17 @@ class Solution {
         return profit
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    val prices1 = intArrayOf(7, 1, 5, 3, 6, 4)
+    println("Max benefit: ${solution.maxProfit(prices1)}")
+
+    val prices2 = intArrayOf(5, 5, 5, 5, 5)
+    println("Max benefit: ${solution.maxProfit(prices2)}")
+
+    val prices3 = intArrayOf(1, 2, 3, 4, 5)
+    println("Max benefit: ${solution.maxProfit(prices1)}")
+}
