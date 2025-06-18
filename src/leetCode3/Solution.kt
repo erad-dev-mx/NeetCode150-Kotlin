@@ -16,7 +16,7 @@ class Solution {
 
         var ans = 0
         var left = 0
-        var set = mutableSetOf<Char>()
+        val set = mutableSetOf<Char>()
 
         for (right in s.indices) {
             while (set.contains(s[right])) {
