@@ -1,5 +1,13 @@
 package leetCode3
 
+/**
+ * https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * Time Complexity: O(n)
+ * Space Complexity: O(min(N,M)
+ * This approach uses a sliding window and Two-Pointer technique.
+ * */
+
+
 class Solution {
     fun lengthOfLongestSubstring(s: String): Int {
         if (s.isEmpty()) {
