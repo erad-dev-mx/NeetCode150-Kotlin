@@ -1,5 +1,12 @@
 package leetCode424
 
+/**
+ * https://leetcode.com/problems/longest-repeating-character-replacement/
+ * Time Complexity: O(N)
+ * Space Complexity: O(1)
+ * This approach uses a sliding window + Two-Pointer technique.
+ * */
+
 class Solution {
     fun characterReplacement(s: String, k: Int): Int {
         val occurrence = IntArray(26)
