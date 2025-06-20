@@ -1,5 +1,12 @@
 package leetCode567
 
+/**
+ * https://leetcode.com/problems/permutation-in-string/
+ * Time Complexity: O(N)
+ * Space Complexity: O(1)
+ * This approach uses a sliding window technique
+ * */
+
 class Solution {
     fun checkInclusion(s1: String, s2: String): Boolean {
         if (s1.length > s2.length) return false
