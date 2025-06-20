@@ -14,7 +14,7 @@ class Solution {
 
         for (i in 0 until s2.length - s1.length) {
             if (matches(s1Map, s2Map)) return true
-            s2Map[s2[i + s1.length] - 'a'] // adding new char in window
+            s2Map[s2[i + s1.length] - 'a']++ // adding new char in window
             s2Map[s2[i] - 'a']-- // removing old char from window
         }
 
@@ -27,4 +27,15 @@ class Solution {
         }
         return true
     }
+}
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    println(solution.checkInclusion("ab", "eidbaooo")) // true
+    println(solution.checkInclusion("ab", "eidboaoo")) // false
+    println(solution.checkInclusion("adc", "dcda"))    // true
+    println(solution.checkInclusion("hello", "ooolleoooleh")) // false
+    println(solution.checkInclusion("a", "a"))         // true
 }
