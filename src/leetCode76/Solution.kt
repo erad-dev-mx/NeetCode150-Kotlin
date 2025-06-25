@@ -1,5 +1,13 @@
 package leetCode76
 
+/**
+ * https://leetcode.com/problems/minimum-window-substring/
+ * Time Complexity: O(S+T)
+ * Space Complexity: O(S+T)
+ * This is a sliding window approach
+ * */
+
+
 class Solution {
     fun minWindow(s: String, t: String): String {
         if (s.isEmpty() || t.isEmpty() || s.length < t.length) return ""
