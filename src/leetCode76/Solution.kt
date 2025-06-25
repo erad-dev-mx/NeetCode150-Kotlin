@@ -53,3 +53,23 @@ class Solution {
         return if (ans[0] == -1) "" else s.substring(ans[1], ans[2] + 1)
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    val s1 = "ADOBECODEBANC"
+    val t1 = "ABC"
+    val result1 = solution.minWindow(s1, t1)
+    println("Result 1: $result1")
+
+    val s2 = "A"
+    val t2 = "AA"
+    val result2 = solution.minWindow(s2, t2)
+    println("Result 2: $result2")
+
+    val s3 = "ABC"
+    val t3 = "ABC"
+    val result3 = solution.minWindow(s3, t3)
+    println("Result 3: $result3")
+}
