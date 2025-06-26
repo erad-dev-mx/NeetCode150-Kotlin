@@ -3,6 +3,13 @@ package leetCode239
 import java.util.Deque
 import java.util.LinkedList
 
+/**
+ * https://leetcode.com/problems/two-sum/
+ * Time Complexity: O(n)
+ * Space Complexity: O(k)
+ * This is a sliding window approach
+ * */
+
 class Solution {
     fun maxSlidingWindow(nums: IntArray, k: Int): IntArray {
         if (nums.isEmpty() || k <= 0) return intArrayOf()
