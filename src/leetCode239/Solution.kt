@@ -40,3 +40,28 @@ class Solution {
         return result
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    val nums1 = intArrayOf(1, 3, -1, -3, 5, 3, 6, 7)
+    val k1 = 3
+    val result1 = solution.maxSlidingWindow(nums1, k1)
+    println("Result 1: ${result1.joinToString(", ", "[", "]")}")
+
+    val nums2 = intArrayOf(1)
+    val k2 = 1
+    val result2 = solution.maxSlidingWindow(nums2, k2)
+    println("Result 2: ${result2.joinToString(", ", "[", "]")}")
+
+    val nums3 = intArrayOf(9, 11)
+    val k3 = 2
+    val result3 = solution.maxSlidingWindow(nums3, k3)
+    println("Result 3: ${result3.joinToString(", ", "[", "]")}")
+
+    val nums4 = intArrayOf(4, -2)
+    val k4 = 2
+    val result4 = solution.maxSlidingWindow(nums4, k4)
+    println("Result 4: ${result4.joinToString(", ", "[", "]")}")
+}
