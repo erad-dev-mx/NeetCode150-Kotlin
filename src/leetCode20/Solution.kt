@@ -29,3 +29,15 @@ class Solution {
         return stack.isEmpty()
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    println(solution.isValid("()"))
+    println(solution.isValid("()[]{}"))
+    println(solution.isValid("{[()]}"))
+    println(solution.isValid(""))
+    println(solution.isValid("(]"))
+    println(solution.isValid("([)]"))
+}
