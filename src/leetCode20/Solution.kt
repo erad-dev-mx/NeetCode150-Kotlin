@@ -1,5 +1,11 @@
 package leetCode20
 
+/**
+ * https://leetcode.com/problems/valid-parentheses/
+ * Time Complexity: O(N)
+ * Space Complexity: O(N)
+ * */
+
 class Solution {
     fun isValid(s: String): Boolean {
         val mappedBrackets = mapOf(
