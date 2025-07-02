@@ -7,7 +7,6 @@ package leetCode3
  * This approach uses a sliding window and Two-Pointer technique.
  * */
 
-
 class Solution {
     fun lengthOfLongestSubstring(s: String): Int {
         if (s.isEmpty()) {

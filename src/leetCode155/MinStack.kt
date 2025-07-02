@@ -1,23 +1,32 @@
 package leetCode155
 
+
+
 class MinStack() {
+    private var head: Node? = null
 
     fun push(`val`: Int) {
-        
+        if (head == null) {
+            head = Node(`val`, `val`, null)
+        } else {
+            val min = minOf(`val`, head!!.min)
+            head = Node(`val`, min, head)
+        }
     }
 
     fun pop() {
-        
+        head = head!!.next
     }
 
     fun top(): Int {
-        
+        return head!!.value
     }
 
     fun getMin(): Int {
-        
+        return head!!.min
     }
 
+    private data class Node(val value: Int, val min: Int, val next: Node?)
 }
 
 /**
