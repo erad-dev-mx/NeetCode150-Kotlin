@@ -1,6 +1,10 @@
 package leetCode155
 
-
+/**
+ * https://leetcode.com/problems/min-stack/submissions/1683280973/
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ * */
 
 class MinStack() {
     private var head: Node? = null
