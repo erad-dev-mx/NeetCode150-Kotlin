@@ -37,3 +37,22 @@ class Solution {
         }
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    test(solution, arrayOf("2", "1", "+", "3", "*"))
+    test(solution, arrayOf("4", "13", "5", "/", "+"))
+    test(solution, arrayOf("3", "4", "+"))
+    test(solution, arrayOf("5"))
+    test(
+        solution,
+        arrayOf("10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+")
+    )
+}
+
+fun test(solution: Solution, tokens: Array<String>) {
+    val result = solution.evalRPN(tokens)
+    println("Result: $result")
+}
