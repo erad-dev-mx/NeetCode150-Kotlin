@@ -1,5 +1,9 @@
 package leetCode22
 
+/**
+ * https://leetcode.com/problems/generate-parentheses/
+ * */
+
 class Solution {
     fun generateParenthesis(n: Int): List<String> {
         val ans = mutableListOf<String>()
