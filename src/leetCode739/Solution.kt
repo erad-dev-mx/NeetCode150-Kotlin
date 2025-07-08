@@ -1,5 +1,11 @@
 package leetCode739
 
+/**
+ * https://leetcode.com/problems/daily-temperatures/
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * */
+
 class Solution {
     fun dailyTemperatures(temperatures: IntArray): IntArray {
         val n = temperatures.size
