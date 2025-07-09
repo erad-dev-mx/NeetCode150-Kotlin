@@ -30,3 +30,20 @@ class Solution {
         return count
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    val result1 = solution.carFleet(12, intArrayOf(10, 8, 0, 5, 3), intArrayOf(2, 4, 1, 1, 3))
+    println("Fleet: $result1")
+
+    val result2 = solution.carFleet(10, intArrayOf(3), intArrayOf(3))
+    println("Fleet: $result2")
+
+    val result3 = solution.carFleet(100, intArrayOf(0, 2, 4), intArrayOf(4, 2, 1))
+    println("Fleet: $result3")
+
+    val result4 = solution.carFleet(15, intArrayOf(6, 8), intArrayOf(3, 2))
+    println("Fleet: $result4")
+}
