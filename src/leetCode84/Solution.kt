@@ -1,5 +1,11 @@
 package leetCode84
 
+/**
+ * https://leetcode.com/problems/largest-rectangle-in-histogram/
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * */
+
 class Solution {
     fun largestRectangleArea(heights: IntArray): Int {
         var maxArea = 0
