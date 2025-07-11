@@ -1,5 +1,11 @@
 package leetCode704
 
+/**
+ * https://leetcode.com/problems/binary-search/
+ * Time Complexity: O(log n)
+ * Space Complexity: O(1)
+ * */
+
 class Solution {
     fun search(nums: IntArray, target: Int): Int {
         var start = 0
