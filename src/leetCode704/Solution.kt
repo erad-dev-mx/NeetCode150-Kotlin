@@ -2,6 +2,20 @@ package leetCode704
 
 class Solution {
     fun search(nums: IntArray, target: Int): Int {
-        
+        var start = 0
+        var end = nums.size - 1
+
+        while (start <= end) {
+            val middle = start + (end - start)  / 2
+            if (nums[middle] == target) {
+                return middle
+            } else if (nums[middle] > target) {
+                end = middle - 1
+            } else {
+                start = middle + 1
+            }
+        }
+
+        return -1
     }
 }
