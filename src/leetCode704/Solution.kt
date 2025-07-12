@@ -8,17 +8,17 @@ package leetCode704
 
 class Solution {
     fun search(nums: IntArray, target: Int): Int {
-        var start = 0
-        var end = nums.size - 1
+        var left = 0
+        var right = nums.size - 1
 
-        while (start <= end) {
-            val middle = start + (end - start)  / 2
+        while (left <= right) {
+            val middle = left + (right - left)  / 2
             if (nums[middle] == target) {
                 return middle
             } else if (nums[middle] > target) {
-                end = middle - 1
+                right = middle - 1
             } else {
-                start = middle + 1
+                left = middle + 1
             }
         }
 
