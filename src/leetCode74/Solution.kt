@@ -1,5 +1,11 @@
 package leetCode74
 
+/**
+ * https://leetcode.com/problems/binary-search/
+ * Time Complexity: O(log (m * n))
+ * Space Complexity: O(1)
+ * */
+
 class Solution {
     fun searchMatrix(matrix: Array<IntArray>, target: Int): Boolean {
         val m = matrix.size // rows
