@@ -30,3 +30,32 @@ class Solution {
         return false
     }
 }
+
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    val m1 = arrayOf(
+        intArrayOf(1, 3, 5, 7),
+        intArrayOf(10, 11, 16, 20),
+        intArrayOf(23, 30, 34, 60)
+    )
+    println("Found: ${solution.searchMatrix(m1, 3)}")
+
+    val m2 = arrayOf(
+        intArrayOf(1, 3)
+    )
+    println("Found: ${solution.searchMatrix(m2, 3)}")
+
+    val m3 = arrayOf(
+        intArrayOf(1),
+        intArrayOf(3)
+    )
+    println("Found: ${solution.searchMatrix(m3, 2)}")
+
+    val m4 = arrayOf(
+        intArrayOf(1, 2, 3, 4)
+    )
+    println("Found: ${solution.searchMatrix(m4, 4)}")
+}
