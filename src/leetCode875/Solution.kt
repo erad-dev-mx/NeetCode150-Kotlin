@@ -1,5 +1,10 @@
 package leetCode875
 
+/**
+ * https://leetcode.com/problems/koko-eating-bananas/
+ * Time complexity: O(n Log(m)) Where n is the number of piles and m is the maximum value in piles
+ * Space Complexity: O(1)
+ * */
 
 class Solution {
     fun minEatingSpeed(piles: IntArray, h: Int): Int {
