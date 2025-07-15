@@ -1,30 +1,29 @@
-package leetCode875;
+package leetCode875
+
 
 class Solution {
-    public int minEatingSpeed(int[] piles, int h) {
-        int left = 1, right = 1;
-        for (int pile : piles) {
-            right = Math.max(right, pile);
-        }
+    fun minEatingSpeed(piles: IntArray, h: Int): Int {
+        var left = 1
+        var right = piles.maxOrNull() ?: 1
 
         while (left < right) {
-            int mid = left + (right - left) / 2;
+            val mid = left + (right - left) / 2
             if (canFinish(piles, mid, h)) {
-                right = mid;
+                right = mid
             } else {
-                left = mid + 1;
+                left = mid + 1
             }
         }
 
-        return left;
+        return left
     }
 
-    private static boolean canFinish(int[] piles, int speed, int h) {
-        int hours = 0;
-        for (int pile : piles) {
-            hours += (int) Math.ceil((double) pile / speed);
+    private fun canFinish(piles: IntArray, speed: Int, h: Int): Boolean {
+        var hours = 0
+        for (pile in piles) {
+            hours += (pile + speed - 1) / speed
         }
 
-        return hours <= h;
+        return hours <= h
     }
 }
