@@ -1,5 +1,10 @@
 package leetCode153
 
+/**
+ * https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+ * Time complexity: O(Log(n))
+ * Space Complexity: O(1)
+ * */
 
 class Solution {
     fun findMin(nums: IntArray): Int {
