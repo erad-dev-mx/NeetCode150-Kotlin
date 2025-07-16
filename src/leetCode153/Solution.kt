@@ -1,5 +1,6 @@
 package leetCode153
 
+
 class Solution {
     fun findMin(nums: IntArray): Int {
         var left = 0
@@ -25,4 +26,24 @@ class Solution {
 
         return ans
     }
+}
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    val nums1 = intArrayOf(3, 4, 5, 1, 2)
+    println("Min: ${solution.findMin(nums1)}")
+
+    val nums2 = intArrayOf(4, 5, 6, 7, 0, 1, 2)
+    println("Min: ${solution.findMin(nums2)}")
+
+    val nums3 = intArrayOf(11, 13, 15, 17)
+    println("Min: ${solution.findMin(nums3)}")
+
+    val nums4 = intArrayOf(2, 1)
+    println("Min: ${solution.findMin(nums4)}")
+
+    val nums5 = intArrayOf(1)
+    println("Min: ${solution.findMin(nums5)}")
 }
