@@ -1,4 +1,4 @@
-package LeetCode121
+package leetCode121
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/

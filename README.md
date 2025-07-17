@@ -11,11 +11,11 @@ This repository contains solutions for various LeetCode problems. The solutions 
 ## Problems list (July 16th, 2025)
 
 * [1. Two Sum](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode1)
+* [3. Longest Substring Without Repeating Characters](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode3)
 * [11. Container With Most Water](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode11)
 * [15. 3Sum](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode15)
 * [20. Valid Parentheses](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode20)
 * [22. Generate Parentheses](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode22)
-* [33. Search in Rotated Sorted Array](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode33)
 * [36. Valid Sudoku](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode36)
 * [42. Trapping Rain Water](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode42)
 * [49. Group Anagrams](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode49)
