@@ -42,3 +42,14 @@ class Solution {
         return 0.0
     }
 }
+
+// Test cases
+fun main() {
+    val solution = Solution()
+
+    println(solution.findMedianSortedArrays(intArrayOf(1, 3), intArrayOf(2))) // 2.0
+    println(solution.findMedianSortedArrays(intArrayOf(1, 2), intArrayOf(3, 4))) // 2.5
+    println(solution.findMedianSortedArrays(intArrayOf(0, 0), intArrayOf(0, 0))) // 0.0
+    println(solution.findMedianSortedArrays(intArrayOf(), intArrayOf(1))) // 1.0
+    println(solution.findMedianSortedArrays(intArrayOf(2), intArrayOf())) // 2.0
+}
