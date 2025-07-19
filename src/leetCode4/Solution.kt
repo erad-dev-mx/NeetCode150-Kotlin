@@ -3,7 +3,7 @@ package leetCode4
 import kotlin.math.min
 
 /**
- * https://leetcode.com/problems/median-of-two-sorted-arrays/"
+ * https://leetcode.com/problems/median-of-two-sorted-arrays/
  * Time Complexity: O(log min(m, n))
  * Space Complexity: O(1)
  * */
