@@ -1,14 +1,11 @@
 package leetCode143
 
 /**
- * Example:
- * var li = ListNode(5)
- * var v = li.`val`
- * Definition for singly-linked list.
- * class ListNode(var `val`: Int) {
- *     var next: ListNode? = null
- * }
- */
+ * https://leetcode.com/problems/reorder-list/
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * */
+
 class Solution {
     fun reorderList(head: ListNode?): Unit {
         if (head == null) return
@@ -51,6 +48,15 @@ class Solution {
     }
 }
 
+/**
+ * Example:
+ * var li = ListNode(5)
+ * var v = li.`val`
+ * Definition for singly-linked list.
+ * class ListNode(var `val`: Int) {
+ *     var next: ListNode? = null
+ * }
+ */
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
