@@ -1,5 +1,11 @@
 package leetCode138
 
+/**
+ * https://leetcode.com/problems/copy-list-with-random-pointer/
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ * */
+
 class Solution {
     val visited = HashMap<Node, Node>()
 

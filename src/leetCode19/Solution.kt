@@ -6,7 +6,6 @@ package leetCode19
  * Space Complexity: O(1)
  * */
 
-
 class Solution {
     fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
         val dummy = ListNode(1)
