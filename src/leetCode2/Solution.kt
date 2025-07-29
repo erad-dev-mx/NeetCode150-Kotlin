@@ -1,6 +1,10 @@
 package leetCode2
 
-
+/**
+ * https://leetcode.com/problems/median-of-two-sorted-arrays/
+ * Time Complexity: O(max(m, n))
+ * Space Complexity: O(max(m, n))
+ * */
 
 class Solution {
     fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
