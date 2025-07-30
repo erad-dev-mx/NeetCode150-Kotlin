@@ -3,7 +3,20 @@ package leetCode141
 
 class Solution {
     fun hasCycle(head: ListNode?): Boolean {
+        if (head == null) return false
 
+        var slow = head
+        var fast = head.next
+
+        while (slow != null || fast != null) {
+            if (fast == null || fast.next == null) return false
+            if (fast == slow) return true
+
+            slow = slow?.next
+            fast = fast.next?.next
+        }
+
+        return false
     }
 }
 
