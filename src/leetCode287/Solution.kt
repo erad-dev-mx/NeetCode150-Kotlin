@@ -1,5 +1,11 @@
 package leetCode287
 
+/**
+ * https://leetcode.com/problems/find-the-duplicate-number/
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ * */
+
 class Solution {
     fun findDuplicate(nums: IntArray): Int {
         var slow = nums[0]
