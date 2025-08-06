@@ -68,3 +68,20 @@ class LRUCache(capacity: Int) {
  * var param_1 = obj.get(key)
  * obj.put(key,value)
  */
+
+// Test cases
+fun main() {
+    val lru = LRUCache(2)
+
+    lru.put(1, 1)
+    lru.put(2, 2)
+    println("Get 1: ${lru.get(1)}") // 1
+
+    lru.put(3, 3) // Evicts key 2
+    println("Get 2: ${lru.get(2)}") // -1
+
+    lru.put(4, 4) // Evicts key 1
+    println("Get 1: ${lru.get(1)}") // -1
+    println("Get 3: ${lru.get(3)}") // 3
+    println("Get 4: ${lru.get(4)}") // 4
+}
