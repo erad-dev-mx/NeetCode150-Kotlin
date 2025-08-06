@@ -1,5 +1,11 @@
 package leetCode146
 
+/**
+ * https://leetcode.com/problems/lru-cache/
+ * Time Complexity: O(1)
+ * Space Complexity: O(capacity)
+ * */
+
 class LRUCache(capacity: Int) {
 
     private inner class Node(var key: Int, var value: Int) {
