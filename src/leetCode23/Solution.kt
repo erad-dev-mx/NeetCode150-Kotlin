@@ -2,6 +2,12 @@ package leetCode23
 
 import java.util.PriorityQueue
 
+/**
+ * https://leetcode.com/problems/merge-k-sorted-lists/
+ * Time Complexity: O(n log n)
+ * Space Complexity: O(n)
+ * */
+
 class Solution {
     fun mergeKLists(lists: Array<ListNode?>): ListNode? {
         val minHeap = PriorityQueue<Int>()
