@@ -14,9 +14,9 @@ class Solution {
 
         for (list in lists) {
             var node = list
-            while (list != null) {
-                minHeap.add(node?.`val`)
-                node = node?.next
+            while (node != null) {
+                minHeap.add(node.`val`)
+                node = node.next
             }
         }
 
@@ -43,3 +43,5 @@ class Solution {
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
+
+
