@@ -44,4 +44,26 @@ class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 
+// Test cases
+fun main() {
+    val l1 = ListNode(1)
+    l1.next = ListNode(4)
+    l1.next!!.next = ListNode(5)
 
+    val l2 = ListNode(1)
+    l2.next = ListNode(3)
+    l2.next!!.next = ListNode(4)
+
+    val l3 = ListNode(2)
+    l3.next = ListNode(6)
+
+    val lists = arrayOf<ListNode?>(l1, l2, l3)
+
+    val solution = Solution()
+    var merged = solution.mergeKLists(lists)
+
+    while (merged != null) {
+        print("${merged.`val`} ")
+        merged = merged.next
+    }
+}
