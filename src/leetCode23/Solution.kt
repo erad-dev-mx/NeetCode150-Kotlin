@@ -4,7 +4,24 @@ import java.util.PriorityQueue
 
 class Solution {
     fun mergeKLists(lists: Array<ListNode?>): ListNode? {
+        val minHeap = PriorityQueue<Int>()
 
+        for (list in lists) {
+            var node = list
+            while (list != null) {
+                minHeap.add(node?.`val`)
+                node = node?.next
+            }
+        }
+
+        val dummy = ListNode(1)
+        var merge = dummy
+        while (minHeap.isNotEmpty()) {
+            merge.next = ListNode(minHeap.remove())
+            merge = merge.next!!
+        }
+
+        return dummy.next
     }
 }
 
