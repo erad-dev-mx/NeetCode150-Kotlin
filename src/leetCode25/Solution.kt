@@ -82,3 +82,36 @@ class Solution {
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
+
+// Test cases
+fun main() {
+    val head = ListNode(1).apply {
+        next = ListNode(2).apply {
+            next = ListNode(3).apply {
+                next = ListNode(4).apply {
+                    next = ListNode(5)
+                }
+            }
+        }
+    }
+
+    val solution = Solution()
+
+    println("Original list")
+    printList(head)
+
+    val k = 2
+    val result = solution.reverseKGroup(head, k)
+
+    println("After list")
+    printList(result)
+}
+
+fun printList(head: ListNode?) {
+    var curr = head
+    while (curr != null) {
+        print("${curr.`val`} ")
+        curr = curr.next
+    }
+    println()
+}
