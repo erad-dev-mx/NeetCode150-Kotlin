@@ -3,6 +3,12 @@ package leetCode226
 import java.util.LinkedList
 import java.util.Queue
 
+/**
+ * https://leetcode.com/problems/invert-binary-tree/
+ * Time Complexity: O(n)
+ * Space Complexity: O(h), height of tree
+ * */
+
 class Solution {
     fun invertTree(root: TreeNode?): TreeNode? {
         if (root == null) return null
