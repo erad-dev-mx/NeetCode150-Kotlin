@@ -1,5 +1,11 @@
 package leetCode104
 
+/**
+ * https://leetcode.com/problems/maximum-depth-of-binary-tree/
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * */
+
 class Solution {
     fun maxDepth(root: TreeNode?): Int {
         if (root == null) {
