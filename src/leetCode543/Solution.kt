@@ -1,5 +1,11 @@
 package leetCode543
 
+/**
+ * https://leetcode.com/problems/diameter-of-binary-tree/
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * */
+
 class Solution {
     var maxDiameter = 0
 
