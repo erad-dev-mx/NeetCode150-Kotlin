@@ -2,6 +2,12 @@ package leetCode110
 
 import kotlin.math.abs
 
+/**
+ * https://leetcode.com/problems/balanced-binary-tree/
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * */
+
 class Solution {
     fun isBalanced(root: TreeNode?): Boolean {
         if (root == null) return true
