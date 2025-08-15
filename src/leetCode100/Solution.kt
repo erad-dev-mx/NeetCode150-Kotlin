@@ -22,3 +22,28 @@ class TreeNode(var `val`: Int) {
     var left: TreeNode? = null
     var right: TreeNode? = null
 }
+
+// Test cases
+fun main() {
+    // Tree 1
+    val p = TreeNode(1)
+    p.left = TreeNode(2)
+    p.right = TreeNode(3)
+
+    // Tree 2
+    val q = TreeNode(1)
+    q.left = TreeNode(2)
+    q.right = TreeNode(3)
+
+    val solution = Solution()
+    println(solution.isSameTree(p, q)) // Expected: true
+
+    // Another test
+    val p2 = TreeNode(1)
+    p2.left = TreeNode(2)
+
+    val q2 = TreeNode(1)
+    q2.right = TreeNode(2)
+
+    println(solution.isSameTree(p2, q2)) // Expected: false
+}
