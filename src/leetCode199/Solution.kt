@@ -3,6 +3,12 @@ package leetCode199
 import java.util.LinkedList
 import java.util.Queue
 
+/**
+ * https://leetcode.com/problems/binary-tree-right-side-view/
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * */
+
 class Solution {
     fun rightSideView(root: TreeNode?): List<Int> {
         val result = mutableListOf<Int>()
