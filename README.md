@@ -8,7 +8,7 @@ This repository contains solutions for various LeetCode problems. The solutions 
 
 :rocket: by __*[erad.dev](https://erad.dev/)*__
 
-## Problems list (July 16th, 2025)
+## Problems list (August 19th, 2025)
 
 - [1. Two Sum](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode1)
 - [2. Add Two Numbers](https://github.com/erad-dev-mx/NeetCode150-Kotlin/tree/master/src/leetCode2)
